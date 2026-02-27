@@ -11,7 +11,7 @@ services:
       - db_data:/var/lib/postgresql/data
 
   odoo:
-    image: odoo:19.0
+    build: .
     container_name: odoo-web
     depends_on:
       - db
